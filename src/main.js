@@ -1,4 +1,10 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+const app = createApp(App)
+
+import modalSame from './components/modalSame.vue'
+ 
+app.component('modal-same', modalSame)
+
+app.mount('#app')
